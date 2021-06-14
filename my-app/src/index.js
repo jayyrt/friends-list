@@ -1,4 +1,4 @@
-import React from 'react';
+gitimport React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
