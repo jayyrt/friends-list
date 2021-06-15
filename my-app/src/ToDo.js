@@ -5,7 +5,7 @@ class ToDo extends Component {
         super(props)
         
         this.state = {
-
+            toDos: []
         }
     }
 
