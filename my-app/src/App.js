@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css'
+import ToDo from './ToDo';
 
 class App extends React.Component{
   constructor(props){

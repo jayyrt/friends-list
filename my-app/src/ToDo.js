@@ -10,10 +10,10 @@ class ToDo extends Component {
     }
 
     render(){
-        return(
+        return (
             <>
                 <h1>My TO DO list</h1>
-                </input >
+                <input />
                 <button>Add to List</button>
                 <ul>
                     <li>our to dos</li>
