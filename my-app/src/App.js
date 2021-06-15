@@ -27,6 +27,7 @@ class App extends React.Component{
       <div>{this.state.counter}</div>
       <button onClick={this.handleClick}>Increase</button>
       <button onClick={this.secondHandle}>Decrease</button>
+      <ToDo />
       </div>
     )
   }
