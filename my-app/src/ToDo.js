@@ -5,18 +5,32 @@ class ToDo extends Component {
         super(props)
         
         this.state = {
-            toDos: []
+            toDoList: ['Hello', 'Hi'],
+            toDo: '',
         }
     }
 
+    handleChange(event){
+        this.setState({ toDo: event.target.value})
+    }
+
+    handleClick = () => {
+        const toDoCopy = this.state.toDoList.slice();
+        toDoCopy.push(this.state.toDo);
+        this.setState({ toDoList: toDoCopy })
+    }
+
     render(){
+        console.log(this.state.toDoList);
         return (
             <>
                 <h1>My TO DO list</h1>
-                <input />
-                <button>Add to List</button>
+                <input onChange={(event) => this.handleChange(event)}/>
+                <button onClick={this.handleClick}>Add to List</button>
                 <ul>
-                    <li>our to dos</li>
+                    [
+                    <li>{this.state.toDoList[0]}</li>
+                    ]
                 </ul>
            </> 
         )
