@@ -5,7 +5,7 @@ class ToDo extends Component {
         super(props)
         
         this.state = {
-            toDoList: ['Hello', 'Hi'],
+            toDoList: [],
             toDo: '',
         }
     }
@@ -28,9 +28,7 @@ class ToDo extends Component {
                 <input onChange={(event) => this.handleChange(event)}/>
                 <button onClick={this.handleClick}>Add to List</button>
                 <ul>
-                    [
-                    <li>{this.state.toDoList[0]}</li>
-                    ]
+                    {this.state.toDoList.map((toDo) => <li>{toDo}</li>)}
                 </ul>
            </> 
         )
